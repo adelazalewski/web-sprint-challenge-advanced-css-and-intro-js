@@ -154,6 +154,7 @@ button:hover{
     height:5%;
     width: 10%;	
     }
+    
     .title-container h1{
         font-style: bold;
         font-size: 200%;
@@ -162,7 +163,8 @@ button:hover{
         width:90%;
         height: 20vh;
         object-fit: cover;
-        object-position:   -120%;
+        object-position: 5%;
+        
     }	
     .title-container hr{
         width:90%;

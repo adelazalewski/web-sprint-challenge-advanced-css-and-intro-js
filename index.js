@@ -234,7 +234,10 @@ function getArtistByIndex(array, index) {
 /* Task 4: Create a function called get20s() that takes data as an argument and returns an array with names of artists who were born in and died in 20th century (1900-2000) example born in 1901 and died in 1959 - included / born in 1889 and died in 1925 not included - should return ["Salvador Dali", "Frida Kahlo"]*/
 
 function get20s(){
+let findArray = false;
+for(let i = 0;1900 < i < 2000; i++){
 
+}
   
 
 }
@@ -250,10 +253,11 @@ function get20s(){
  * 
  * Note that sucessfully invoking this function multiple times without refreshing your browser will continuously remove artists from the array until there are none left. If you refresh your browser, the data will reset.  
 */
-function removeArtist(/*code here*/) {
-    /* code here */
-  }
-  
+function removeArtist(array, index) {
+    array.splice(index, 1);
+    return array;
+  };
+ //console.log(removeArtist(artists, 0)); 
  
 
 /**
@@ -269,12 +273,13 @@ bio: Add 1-2 sentences (or use lorem ipsum)
 
 At the end, this function should return the new array with information added"*/
 
-function addArtist(/* Code here */){
+function addArtist(array){
 
-    /* Code here */
+    array.push({id: 20, name: "Adela", years: "1995-6/26/2020", genre: "Web Design", nationality: "Romanian", bio: "At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga."})
+    return array;
 
   }
-
+console.log(addArtist(artists));
 /* Task 7: Create a function called lotsOfArt() that takes one argument: 
 
     (1) artists array 
@@ -283,13 +288,13 @@ and returns an array with names of artists who painted more than 100 paintings.
 
 For example lotsOfArt(artists); will return ["Amedeo Modigliani", "Rene Magritte", ..."Albrecht Dürer"]*/
 
-function lotsOfArt(/* Code here */){
+function lotsOfArt(array){
 
-  /* Code here */
-
-}
-
-
+  return  array.filter(paintings => paintings > 100);
+  
+};
+  
+console.log(lotsOfArt(artists));
 
 // 🎨🎨 STRETCH 🎨🎨//
 
