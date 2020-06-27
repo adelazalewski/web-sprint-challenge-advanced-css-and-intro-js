@@ -1,0 +1,14 @@
+1. acessibility of a website take in consideration building a website
+ that efficent/functional for all it's users including those with special needs.
+
+ 2. when programing you can make sure your html makes use of the semantic html
+  because screen reders cant read abstract tags like div and span; make sure
+   important things are not made important by using a color but using symbols
+    so everyone can see them and understant them the same way even thoes who
+     are color blind; be mindful of the contrast between  your font and the
+      background color ig. with a font that has the color gray.
+3.   a variable is the core of programing. a website runs on variable. they
+ are vital for programming languages like java script.
+
+4. we use functions in code so we can keep our code "dry" and to be able to reuse
+that data as many times as we want.
