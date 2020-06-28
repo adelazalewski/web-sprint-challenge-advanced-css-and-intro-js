@@ -233,16 +233,21 @@ function getArtistByIndex(array, index) {
 
 /* Task 4: Create a function called get20s() that takes data as an argument and returns an array with names of artists who were born in and died in 20th century (1900-2000) example born in 1901 and died in 1959 - included / born in 1889 and died in 1925 not included - should return ["Salvador Dali", "Frida Kahlo"]*/
 
-function get20s(){
-let findArray = false;
-for(let i = 0;1900 < i < 2000; i++){
-
-}
+function get20s(array){
+  //let myYears = "";
+  let newArray = [];
+for( let i = 0; i < array.length; i++){
+  //myYears = array[i].years;
+  //check to see if 1st and 8th index of the string are a 9
   
-
+  
+if((array[i].years.charAt(1) === "9") && (array[i].years.charAt(8) === "9")){
+  newArray.push(array[i].name);
 }
-
-
+}
+return newArray;
+}
+console.log(get20s(artists));
 /* Task 5: Create a function called `removeArtist` that takes two arguments:
  *     (1) artists array
  *     (2) a number which is the desired index in the array.
@@ -289,11 +294,14 @@ and returns an array with names of artists who painted more than 100 paintings.
 For example lotsOfArt(artists); will return ["Amedeo Modigliani", "Rene Magritte", ..."Albrecht Dürer"]*/
 
 function lotsOfArt(array){
-
-  return  array.filter(paintings => paintings > 100);
-  
-};
-  
+ let newArray = [];
+ for(let i = 0; i < array.length; i++){
+   if(array[i].paintings > 100){
+     newArray.push(array[i].name);
+   }
+ }
+  return newArray;  
+ } 
 console.log(lotsOfArt(artists));
 
 // 🎨🎨 STRETCH 🎨🎨//
@@ -332,7 +340,9 @@ function randomize(/* Code here */){
 
     /* Code here */
 
-  }
+}
+
 
 
  /* STRETCH 3: Use advanced array methods (.map, .reduce, .filer) to refactor your MVP code (create an array of all artists born in the 1900s with .filter, for example) */
+ 
